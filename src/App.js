@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+
+import Counter from './components/Counter';
+import ParentChild from './components/ParentChild';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // orig className="App"
+    <div className="flex flex-col space-y-5 bg-purple-400 py-10">
+      <Counter />
+      <ParentChild />
     </div>
   );
 }
